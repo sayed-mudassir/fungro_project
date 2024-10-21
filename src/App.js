@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./components/home";
+import Nav from "./components/Navbar";
+import Promo from "./components/promotion";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Promo />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/teen"
+          element={
+            <>
+              <h1>teen section in under construction</h1>
+            </>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <div
+              style={{
+                background: "#121E2C",
+                width: "100%",
+                height: "100vh",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <h1 style={{ color: "white", fontSize: "100px" , margin:"0", padding:"0"}}>wrong path</h1>
+              <p style={{ color: "white", fontSize:"40px", padding:"10px", margin:"0" }}>
+                Go to Home <Link to="./">Home</Link>
+              </p>
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 

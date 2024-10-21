@@ -1,0 +1,121 @@
+.options{
+    background-color: #1F2E40;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    .fraic{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70vw;
+        padding-bottom: 10px;
+        /* flex-direction: column; */
+        /* border-bottom:10px dashed rgba(216, 248, 180, 0.747) ; */
+    }
+    .option1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #F9D2CD;
+        width: 200px;
+        height: 200px;
+        border-radius: 20%;
+        padding: 50px;
+        margin: 10px;
+        img,h3,p{
+            margin: 0;
+            padding: 0;
+        }
+        transition: transform 1s ease;
+    }
+    .option2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 200px;
+        background-color: white;
+        padding: 10px;
+    }
+    .spin-border {
+        margin-top: 14px;
+        position: relative;
+        /* width: 150px;
+        height: 150px; */
+        background-color: transparent;
+        border: 3px solid transparent; /* Hide border initially */
+        z-index: 1;
+    }
+    .spin-border::before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        right: -3px;
+        bottom: -3px;
+        
+        border-top: 3px solid #F9D2CD;
+        border-bottom: 3px solid #DBF7DB; /* Border color */
+        border-right: 3px solid #FFEFC1;
+        border-left: 3px solid #c5f1c5;
+        border-radius: 50%; /* For circular animation */
+        transition: transform 0.6s ease; /* Smooth animation */
+        z-index: -1; /* Behind the main box */
+    }
+
+    .spin-border:hover::before {
+        box-shadow: 0 0 20px 1px rgba(156, 196, 156, 0.8);
+        transform: rotate(360deg); /* Spin the border on hover */
+    }
+    .option1:hover{
+        transform: rotate(360deg);
+    }
+    .promo{
+        max-width: 100vw;
+        width: 90vw;
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px solid red; */
+        .des{
+            /* padding-right: 20px; */
+            /* margin-right: 10px; */
+            /* border-right: 5px solid  #c5f1c5; */
+        }
+        .vid{
+            /* border: 2px solid red; */
+            border-radius:20px ;
+            iframe{
+                width: 700px;
+                /* margin-left: 10px; */
+                padding: 10px;
+                border-radius:20px ;
+            }
+        }
+        h1{
+            
+            font-size: 60px;
+            margin-bottom: 0;
+        }
+        p{
+            padding-top: 25px;
+            margin-top: 0;
+            font-size: 20px;
+        }
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        max-width: 100vw;
+        width: 100%;
+        p{
+            padding: 5px;
+        }
+    }
+}
