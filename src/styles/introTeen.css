@@ -1,51 +1,107 @@
-.intro-teen{
+.intro-teen {
     max-width: 100vw;
     display: flex;
     align-items: stretch;
     justify-content: center;
     gap: 100px;
     overflow: hidden;
-    .desc{
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: self-start;
-        .download{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        h1{
-            font-size: 62px;
-            margin: 0;
-            padding: 0;
-            color: #D8E0E9;
+}
 
-        }
-        p{
-            padding: 10px;
-            padding-left: 10px;
-            margin: 0;
-            font-size: 18px;
-            color: #BECED8;
-        }
-        .image-small-width{
-            width: 120px;
-            height: 50px;
-        }
+.intro-teen .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro-teen .desc .download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro-teen .desc h1 {
+    font-size: 62px;
+    margin: 0;
+    padding: 0;
+    color: #D8E0E9;
+}
+
+.intro-teen .desc p {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 18px;
+    color: #BECED8;
+}
+
+.intro-teen .desc .image-small-width {
+    width: 120px;
+    height: 50px;
+}
+
+.intro-teen .carosel {
+    position: relative;
+    top: 10px;
+}
+
+.intro-teen .image-full-width {
+    background: transparent;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Query for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .intro-teen {
+        flex-direction: column;
+        gap: 50px;
     }
-    .carosel{
-        position: relative;
-        top: 10px;
+
+    .intro-teen .desc h1 {
+        font-size: 48px;
     }
-    .image-full-width{
-        background: transparent;
-        justify-self: center;
-        align-self: center;
+
+    .intro-teen .desc p {
+        font-size: 16px;
+    }
+
+    .intro-teen .image-full-width {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Media Query for small devices (phones) */
+@media (max-width: 600px) {
+    .intro-teen {
+        gap: 20px;
+        flex-direction: column;
         align-items: center;
-        align-content: center;
-        width: 700px;
-        height: 500px;
-        border-radius: 20px ;
+        justify-content: center;
+    }
+
+    .intro-teen .desc h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .intro-teen .desc p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .intro-teen .desc .image-small-width {
+        width: 100px;
+        height: 40px;
+    }
+
+    .intro-teen .image-full-width {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 }

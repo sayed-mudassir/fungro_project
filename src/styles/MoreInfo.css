@@ -1,93 +1,176 @@
-.more-info{
+.more-info {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    .home_stats-wrapper{
-        background: conic-gradient(from 240deg, #2B3C51, #244F54, #2B545E, #2B3C51, #284353);
-        width:70%;
-        padding: 45px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        .fraic{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            .stats-heading{
-                margin: 0;
-                padding: 0;
-                font-size: 30px;
-            }
-            p{
-                margin: 0;
-                padding: 0;
-            }
-        }
+}
 
-    }
-    .features{
-        color: #D8E0E9;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.more-info .home_stats-wrapper {
+    background: conic-gradient(from 240deg, #2B3C51, #244F54, #2B545E, #2B3C51, #284353);
+    width: 70%;
+    padding: 45px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.more-info .home_stats-wrapper .fraic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.more-info .home_stats-wrapper .fraic .stats-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.more-info .home_stats-wrapper .fraic p {
+    margin: 0;
+    padding: 0;
+}
+
+.more-info .features {
+    color: #D8E0E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.more-info .features .ques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.more-info .features .ques p {
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-top: 0;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+.more-info .features .ques h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.more-info .features .feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.more-info .features .feature-box .feature-box_1 {
+    background: radial-gradient(circle, #202b35, #55959c);
+    padding: 32px 42px;
+    height: 250px;
+    width: 200px;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-info .features .feature-box .feature-box_1 svg {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.more-info .features .feature-box .feature-box_1 h3,
+.more-info .features .feature-box .feature-box_1 p {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.more-info .features .feature-box .feature-box_1:hover {
+    background: #47AC68;
+}
+
+/* Media Query for tablets and smaller screens (1024px and below) */
+@media (max-width: 1024px) {
+    .more-info .home_stats-wrapper {
         width: 90%;
-        .ques{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            justify-self: center;
-            p{
-                margin-bottom: 20px;
-                padding: 10px;
-                padding-top: 0;
-                align-self: flex-start;
-                justify-self: flex-start;
-            }
-            h1{
-                padding-bottom: 0;
-                margin-bottom: 0;
-            }
-        }
-        .feature-box{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-            .feature-box_1{
-                background: radial-gradient(circle, #202b35, #55959c);
-                padding: 32px 42px;
-                height: 250px;
-                width: 200px;
-                border: 2px solid #FFFFFF;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                justify-content: center;
-                align-items: center;
-                svg{
-                    width: 100px;
-                    height: 100px;
-                    margin: 0;
-                    padding: 0;
-                }
-                h3,p{
-                    padding: 0;
-                    margin: 0;
-                    padding-bottom: 10px;
-                }
-    
-            }
-            .feature-box_1:hover{
-                background: #47AC68
-            }
-        }
+        flex-direction: column;
+        padding: 30px;
     }
-    
 
+    .more-info .home_stats-wrapper .fraic .stats-heading {
+        font-size: 24px;
+    }
+
+    .more-info .features .feature-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .more-info .features .feature-box .feature-box_1 {
+        width: 90%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .more-info .features .feature-box .feature-box_1 svg {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Media Query for small devices (600px and below) */
+@media (max-width: 600px) {
+    .more-info {
+        padding: 20px;
+    }
+
+    .more-info .home_stats-wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .more-info .home_stats-wrapper .fraic {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .more-info .home_stats-wrapper .fraic .stats-heading {
+        font-size: 20px;
+    }
+
+    .more-info .features .feature-box {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .more-info .features .feature-box .feature-box_1 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .more-info .features .feature-box .feature-box_1 svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .more-info .features .ques p {
+        font-size: 14px;
+    }
+
+    .more-info .features .ques h1 {
+        font-size: 24px;
+    }
 }
