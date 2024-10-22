@@ -50,7 +50,7 @@
     flex-direction: column;
     border-radius: 20px;
     gap: 10px;
-    transition: transform 0.6s ease; /* Added smooth transition for flip */
+    transition: transform 1.5s ease; /* Added smooth transition for flip */
     position: relative;
     color: white;
     text-align: center;
