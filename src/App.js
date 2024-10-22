@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/home";
 import Nav from "./components/Navbar";
 import Promo from "./components/promotion";
+import Teen from "./components/Teen";
 
 function App() {
   return (
@@ -14,9 +15,7 @@ function App() {
         <Route
           path="/teen"
           element={
-            <>
-              <h1>teen section in under construction</h1>
-            </>
+            <Teen/>
           }
         />
         <Route

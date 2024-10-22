@@ -82,18 +82,19 @@
         align-items: center;
         /* border: 2px solid red; */
         .des{
-            /* padding-right: 20px; */
+            padding-right: 78px;
             /* margin-right: 10px; */
-            /* border-right: 5px solid  #c5f1c5; */
+            border-right: 5px solid  #c5f1c5;
         }
         .vid{
             /* border: 2px solid red; */
             border-radius:20px ;
+            margin: 10px;
             iframe{
                 width: 700px;
                 /* margin-left: 10px; */
                 padding: 10px;
-                border-radius:20px ;
+                border-radius:30px ;
             }
         }
         h1{

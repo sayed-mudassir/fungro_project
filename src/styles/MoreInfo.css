@@ -1,0 +1,100 @@
+.more-info{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .home_stats-wrapper{
+        background: conic-gradient(from 240deg, #2B3C51, #244F54, #2B545E, #2B3C51, #284353);
+        width:70%;
+        padding: 45px;
+        /* border: 2px solid beige; */
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .fraic{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            .stats-heading{
+                margin: 0;
+                padding: 0;
+                font-size: 30px;
+            }
+            p{
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    }
+    .features{
+        color: #D8E0E9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        .ques{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            p{
+                margin-bottom: 20px;
+                padding: 10px;
+                padding-top: 0;
+                align-self: flex-start;
+                justify-self: flex-start;
+            }
+            h1{
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+        }
+        .feature-box{
+            /* width: 70%; */
+            /* border: 1px solid blue; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            .feature-box_1{
+                /* background: radial-gardient(circle, ); */
+                background: radial-gradient(circle, #202b35, #55959c);
+
+                padding: 32px 42px;
+                height: 250px;
+                width: 200px;
+                border: 2px solid #FFFFFF;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                /* align-items: center; */
+                justify-content: center;
+                align-items: center;
+                svg{
+                    width: 100px;
+                    height: 100px;
+                    margin: 0;
+                    padding: 0;
+                }
+                h3,p{
+                    padding: 0;
+                    margin: 0;
+                    padding-bottom: 10px;
+                }
+    
+            }
+            .feature-box_1:hover{
+                background: #47AC68
+            }
+        }
+    }
+    
+
+}
