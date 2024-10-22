@@ -1,16 +1,16 @@
 import "../styles/teen-footer.css";
 
 const linksMap = {
-  Home: "./",
-  About: "#",
-  Blogs: "#",
-  FAQs: "https://www.funngro.com/faq",
-  Careers: "https://www.funngro.com/careers",
-  Investors: "https://www.funngro.com/investors",
-  Login: "https://portal.funngro.com/login/",
-  ContactUs: "https://www.funngro.com/contact",
-  PrivacyPolicy: "https://www.funngro.com/privacy-policy",
-  TermsConditions: "https://www.funngro.com/terms-and-conditions",
+  "Home": "./",
+  "About": "#",
+  "Blogs": "#",
+  "FAQs": "https://www.funngro.com/faq",
+  "Careers": "https://www.funngro.com/careers",
+  "Investors": "https://www.funngro.com/investors",
+  "Login": "https://portal.funngro.com/login/",
+  "Contact Us": "https://www.funngro.com/contact",
+  "Privacy Policy": "https://www.funngro.com/privacy-policy",
+  "Terms & Conditions": "https://www.funngro.com/terms-and-conditions",
 };
 
 const TeenFooter = () => {
@@ -25,7 +25,7 @@ const TeenFooter = () => {
       <div className="footer-links-wrapper">
         {Object.entries(linksMap).map(([key, value]) => {
           return (
-            <a key={key} href={value}>
+            <a key={key} href={value} className="links">
               {key}
             </a> // Add a 'key' prop for each link
           );

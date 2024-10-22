@@ -18,10 +18,9 @@ nav{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        link:hover{
-            border: 2px solid red ;
-            /* color: #FFFFFF;
-            text-decoration: none; */
+        .link:hover{
+            border-bottom: 2px solid #50C47F ;
+            /* font-size: 30px; */
         }
     }
 }

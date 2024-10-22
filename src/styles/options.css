@@ -6,6 +6,8 @@
     max-width: 100vw;
     height: fit-content;
     flex-direction: column;
+    padding: 55px;
+    /* margin-/: 20px; */
     .fraic{
         display: flex;
         align-items: center;
@@ -80,6 +82,7 @@
         color: white;
         justify-content: space-around;
         align-items: center;
+        padding: 40px;
         /* border: 2px solid red; */
         .des{
             padding-right: 78px;

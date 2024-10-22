@@ -18,13 +18,13 @@ const Nav = () => {
         />
       </Link>
       <div className="links">
-        <Link to="/teen" style={styles}>
+        <Link to="/teen" style={styles} className="link">
           Teen
         </Link>
-        <Link to="/" style={styles}>
+        <Link to="/" style={styles} className="link">
           Home
         </Link>
-        <Link to="#" style={styles}>
+        <Link to="/parent" style={styles} className="link">
           Parent
         </Link>
         <svg
