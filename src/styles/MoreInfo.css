@@ -1,5 +1,4 @@
 .more-info{
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +7,6 @@
         background: conic-gradient(from 240deg, #2B3C51, #244F54, #2B545E, #2B3C51, #284353);
         width:70%;
         padding: 45px;
-        /* border: 2px solid beige; */
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -56,16 +54,12 @@
             }
         }
         .feature-box{
-            /* width: 70%; */
-            /* border: 1px solid blue; */
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 50px;
             .feature-box_1{
-                /* background: radial-gardient(circle, ); */
                 background: radial-gradient(circle, #202b35, #55959c);
-
                 padding: 32px 42px;
                 height: 250px;
                 width: 200px;
@@ -74,7 +68,6 @@
                 display: flex;
                 flex-direction: column;
                 overflow: hidden;
-                /* align-items: center; */
                 justify-content: center;
                 align-items: center;
                 svg{
